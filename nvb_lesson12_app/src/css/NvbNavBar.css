@@ -1,0 +1,46 @@
+/* 🌐 NvbNavBar.css - chỉ dành cho thanh điều hướng */
+
+.nvb-navbar {
+  background: linear-gradient(135deg, #00b4d8, #0077b6);
+  padding: 0.8rem 2rem;
+  display: flex;
+  gap: 1.5rem;
+  align-items: center;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.15);
+}
+
+/* Link cơ bản */
+.nvb-link {
+  color: white;
+  text-decoration: none;
+  font-size: 1.1rem;
+  font-weight: 500;
+  transition: all 0.3s ease;
+  padding: 0.5rem 1rem;
+  border-radius: 8px;
+}
+
+/* Hover */
+.nvb-link:hover {
+  background: rgba(255, 255, 255, 0.2);
+  transform: translateY(-2px);
+}
+
+/* Active link (khi đang ở trang đó) */
+.nvb-link.active {
+  background: white;
+  color: #0077b6;
+  font-weight: 700;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+  .nvb-navbar {
+    flex-direction: column;
+    gap: 0.8rem;
+  }
+  .nvb-link {
+    width: 100%;
+    text-align: center;
+  }
+}

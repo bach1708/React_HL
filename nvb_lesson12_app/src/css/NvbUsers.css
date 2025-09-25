@@ -1,0 +1,100 @@
+/* Khung tổng thể của trang Users */
+.users-container {
+  padding: 40px;
+  background: #f9f9f9;
+  min-height: 100vh;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+/* Tiêu đề trang */
+.users-title {
+  text-align: center;
+  font-size: 2rem;
+  font-weight: bold;
+  color: #00796b;
+  margin-bottom: 20px;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+}
+
+/* Bảng danh sách user */
+.users-table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-bottom: 30px;
+  background: white;
+  border-radius: 10px;
+  overflow: hidden;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+}
+
+.users-table th {
+  background-color: #00796b;
+  color: white;
+  padding: 12px;
+  text-align: center;
+  font-weight: bold;
+  font-size: 1rem;
+}
+
+.users-table td {
+  padding: 12px;
+  text-align: center;
+  border-bottom: 1px solid #ddd;
+  font-size: 0.95rem;
+}
+
+.users-table tr:nth-child(even) {
+  background-color: #f2f2f2;
+}
+
+.users-table tr:hover {
+  background-color: #e0f7fa;
+  transition: background 0.2s ease-in-out;
+}
+
+/* Nút chung */
+.btn {
+  padding: 8px 15px;
+  border: none;
+  border-radius: 5px;
+  color: white;
+  font-size: 0.9rem;
+  cursor: pointer;
+  text-decoration: none;
+  margin: 0 4px;
+  transition: all 0.2s ease;
+}
+
+/* Nút chỉnh sửa */
+.btn-success {
+  background: #4caf50;
+}
+
+.btn-success:hover {
+  background: #45a049;
+  transform: translateY(-2px);
+}
+
+/* Nút xóa */
+.btn-danger {
+  background: #f44336;
+}
+
+.btn-danger:hover {
+  background: #d32f2f;
+  transform: translateY(-2px);
+}
+
+/* Nút thêm mới */
+.btn-primary {
+  background: #2196f3;
+  display: inline-block;
+  text-align: center;
+  margin-top: 20px;
+}
+
+.btn-primary:hover {
+  background: #1976d2;
+  transform: scale(1.05);
+}
